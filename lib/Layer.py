@@ -88,7 +88,7 @@ class DgmL(Layer):
         feature = QgsFeature()
         feature.setGeometry(ppa)
         self.dgm.startEditing()
-        assert (self.dgm.addFeatures([feature]))
+        self.dgm.addFeatures([feature])
         self.dgm.commitChanges()
 
 
@@ -244,7 +244,7 @@ class DammL(Layer):
                               um, ueberlauf, v, quote, energielinienhoehe,
                               time_str])
         self.damm.startEditing()
-        assert (self.damm.addFeatures([feature]))
+        self.damm.addFeatures([feature])
         self.damm.commitChanges()
 
     def getSelected(self):
@@ -422,7 +422,7 @@ class FlussL(Layer):
         feature = QgsFeature()
         feature.setGeometry(ls)
         feature.setAttributes(["Fluss",])
-        assert (self.fluss.addFeatures([feature]))
+        self.fluss.addFeatures([feature])
         self.fluss.commitChanges()
 
     def getFluss(self) -> QgsLineString | None:
@@ -525,5 +525,5 @@ class IntL(Layer):
         feature.setAttributes(
             [inten, v, h, type, pos, quote, energielinienhoehe])
         self.intensitaet.startEditing()
-        assert (self.intensitaet.addFeatures([feature]))
+        self.intensitaet.addFeatures([feature])
         self.intensitaet.commitChanges()

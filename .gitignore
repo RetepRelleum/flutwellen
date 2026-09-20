@@ -10,6 +10,7 @@
 .gitignore
 .gitattributes
 
-myscript.sh
+.myscript.sh
+
 
 
