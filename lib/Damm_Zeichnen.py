@@ -34,7 +34,6 @@ from qgis.PyQt.QtGui import QColor, QGuiApplication, QCursor
 from qgis.gui import QgsMapTool, QgsRubberBand
 import qgis.utils
 from qgis.core import Qgis, QgsProject, QgsApplication, NULL
-
 from .Raster import Raster, Mupe
 from .Fluss_Zeichnen import CreateFluss
 
