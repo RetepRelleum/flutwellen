@@ -8,7 +8,7 @@ name=Flutwellen
 qgisMinimumVersion=4.0
 qgisMaximumVersion=4.99
 description=https://github.com/RetepRelleum/flutwelle
-version=0.1
+version=0.11
 author=Retep Relleum
 email=retep.relleum@bluewin.ch
 
