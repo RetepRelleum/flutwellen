@@ -7,6 +7,8 @@
 .help/
 .i18n/
 .pre-commit-config.yaml
+.gitignore
+.gitattributes
 
 myscript.sh
 
