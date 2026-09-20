@@ -1,0 +1,13 @@
+# IDE
+
+.github/
+.vscode/
+.vscode/launch.json
+.vscode/settings.json
+.help/
+.i18n/
+.pre-commit-config.yaml
+
+myscript.sh
+
+
