@@ -1,0 +1,8 @@
+
+.github/
+.vscode/
+help/
+i18n/
+test/
+myscript.sh
+.pre-commit-config.yaml
