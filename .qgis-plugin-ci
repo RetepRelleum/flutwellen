@@ -1,5 +1,0 @@
-# qgis-plugin-ci configuration
-# See https://opengisch.github.io/qgis-plugin-ci/
-plugin_path: Flutwellen
-github_organization_slug: RetepRelleum
-project_slug: flutwellen

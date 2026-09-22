@@ -1,5 +1,0 @@
-<RCC>
-    <qresource prefix="/plugins/Flutwellen" >
-        <file>icon.png</file>
-    </qresource>
-</RCC>
