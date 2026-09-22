@@ -86,7 +86,7 @@ class DammZeichnen(QgsMapTool):
                     teer = "Bitte Kopieren sie die nötigen Dateien herunter "
                     teer += "https://www.swisstopo.admin.ch/de/hoehenmodell-swissalti3d"
                     qgis.utils.iface.messageBar().pushMessage(
-                        "Error", teer, level=Qgis.Critical)
+                        "Error", teer, level= Qgis.MessageLevel.Critical)
             elif self.p2 is NULL:
                 try:
                     coord_transform = self.canvas.getCoordinateTransform()

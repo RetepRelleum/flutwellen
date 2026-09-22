@@ -198,7 +198,7 @@ class Querschnitt3D:
         m = QgsVertexMarker(canvas)
         m.setCenter(pnt)
         m.setColor(QColor('Black'))
-        m.setIconType(QgsVertexMarker.ICON_CIRCLE)
+        m.setIconType(QgsVertexMarker.IconType.CON_CIRCLE)
         m.setIconSize(4)
         m.setPenWidth(1)
         if col == 1:

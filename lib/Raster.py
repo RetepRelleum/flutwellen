@@ -100,8 +100,8 @@ class Raster:
 
     def mark_line(self, point: QgsPoint, val: float = 0):
         fcn = QgsColorRampShader()
-        fcn.setColorRampType(QgsColorRampShader.Interpolated)
-        fcn.setClassificationMode(QgsColorRampShader.Continuous)
+        fcn.setColorRampType(QgsColorRampShader.Type.Interpolated)
+        fcn.setClassificationMode(QgsColorRampShader.ClassificationMode.Continuous)
         lst = [QgsColorRampShader.ColorRampItem(val - 1.5, QColor(0, 0, 0, 0)),
                QgsColorRampShader.ColorRampItem(val, QColor(0, 255, 255)),
                QgsColorRampShader.ColorRampItem(val + 1.5, QColor(0, 0, 0, 0))]
@@ -111,7 +111,7 @@ class Raster:
 
         for layerx in layers:
             layerType = layerx.type()
-            if layerType == QgsMapLayer.RasterLayer:
+            if layerType == QgsMapLayer.LayerType.RasterLayer:
                 if layerx.name() in f'{int(point.x() // 1000)}-{int(point.y()) // 1000}':
                     shader = QgsRasterShader()
                     shader.setRasterShaderFunction(fcn)

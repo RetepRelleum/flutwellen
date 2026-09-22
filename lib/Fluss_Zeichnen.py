@@ -45,7 +45,7 @@ import math as math
 class CreateFluss(QgsTask):
     def __init__(self, p1: QgsPoint, p2: QgsPoint, raster: Raster, dlg,):
         description = 'Flutwellenberechnung'
-        super().__init__(description, QgsTask.CanCancel)
+        super().__init__(description, QgsTask.Flag.CanCancel)
         self.exception = None
         self.p1 = p1
         self.p2 = p2
@@ -155,7 +155,7 @@ class CreateFluss(QgsTask):
         m = QgsVertexMarker(canvas)
         m.setCenter(pnt)
         m.setColor(QColor('Black'))
-        m.setIconType(QgsVertexMarker.ICON_CIRCLE)
+        m.setIconType(QgsVertexMarker.IconType.ICON_CIRCLE)
         m.setIconSize(12)
         m.setPenWidth(1)
         if col == 1:

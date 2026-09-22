@@ -88,7 +88,7 @@ class Querschnitt(QgsTask):
 
     def __init__(self, dlg):
         description = 'Flutwellenberechnung 2'
-        super().__init__(description, QgsTask.CanCancel)
+        super().__init__(description, QgsTask.Flag.CanCancel)
         self.dlg = dlg
         self.raster = Raster(self.dlg.mQgsFileWidget.filePath())
         self.raster.setVisibility(False)
@@ -403,7 +403,7 @@ class Querschnitt(QgsTask):
         m = QgsVertexMarker(canvas)
         m.setCenter(pnt)
         m.setColor(QColor('Black'))
-        m.setIconType(QgsVertexMarker.ICON_CIRCLE)
+        m.setIconType(QgsVertexMarker.IconType.ICON_CIRCLE)
         m.setIconSize(12)
         m.setPenWidth(1)
         if col == 1:
